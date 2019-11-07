@@ -1,0 +1,13 @@
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+	<changeSet id="add_column_phone_to_user" author="test">
+		<sqlFile dbms="mysql" encoding="utf8" endDelimiter=";"
+			path="../sql/add_column_phone_to_user.sql"
+			relativeToChangelogFile="true" />
+		<!-- <rollback> <sql> UPDATE student_configuration SET propertyValue = 
+			'oldValue' WHERE propertyKey = 'someKey'; </sql> </rollback> -->
+	</changeSet>
+</databaseChangeLog>
